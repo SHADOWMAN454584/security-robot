@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surveillance Security Robot - Advanced Monitoring System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="circuit-lines"></div>
+        <div class="floating-particles"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-robot"></i>
+                <span>SurveillanceBot</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#components" class="nav-link">Components</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#specs" class="nav-link">Specifications</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-main">Surveillance Security Robot</span>
+                    <span class="title-sub">Next-Generation Autonomous Monitoring</span>
+                </h1>
+                <p class="hero-description">
+                    An advanced robotic security system powered by Raspberry Pi, featuring real-time surveillance,
+                    autonomous navigation, and intelligent threat detection capabilities.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToSection('components')">
+                        <i class="fas fa-cogs"></i> Explore Components
+                    </button>
+                    <button class="btn-secondary" onclick="scrollToSection('features')">
+                        <i class="fas fa-play"></i> See Features
+                    </button>
+                </div>
+            </div>
+            <div class="hero-robot">
+                <div class="robot-container">
+                    <div class="robot-body">
+                        <div class="robot-head">
+                            <div class="camera-eye left-eye"></div>
+                            <div class="camera-eye right-eye"></div>
+                            <div class="sensor-array">
+                                <div class="sensor"></div>
+                                <div class="sensor"></div>
+                                <div class="sensor"></div>
+                            </div>
+                        </div>
+                        <div class="robot-chassis">
+                            <div class="raspberry-pi">
+                                <div class="pi-board"></div>
+                                <div class="pi-ports"></div>
+                            </div>
+                        </div>
+                        <div class="robot-wheels">
+                            <div class="wheel left-wheel"></div>
+                            <div class="wheel right-wheel"></div>
+                        </div>
+                    </div>
+                    <div class="scanning-beam"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About the Project</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Revolutionary Security Solution</h3>
+                    <p>
+                        The Surveillance Security Robot represents a breakthrough in autonomous security technology.
+                        Designed with cutting-edge components and advanced algorithms, this robot provides
+                        comprehensive monitoring and threat detection capabilities.
+                    </p>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>24/7 Autonomous Monitoring</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-eye"></i>
+                            <span>Real-time Video Surveillance</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-brain"></i>
+                            <span>AI-Powered Threat Detection</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-route"></i>
+                            <span>Intelligent Navigation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="360">0</div>
+                        <div class="stat-label">Degree Coverage</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="24">0</div>
+                        <div class="stat-label">Hours Operation</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label">Meter Range</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="99">0</div>
+                        <div class="stat-label">% Accuracy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Components Section -->
+    <section id="components" class="components">
+        <div class="container">
+            <h2 class="section-title">Core Components</h2>
+            <div class="components-grid">
+                
+                <!-- Raspberry Pi -->
+                <div class="component-card" data-component="raspberry-pi">
+                    <div class="component-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Raspberry Pi 4B</h3>
+                    <p class="component-description">
+                        The brain of our robot - a powerful single-board computer running the main control algorithms.
+                    </p>
+                    <div class="component-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">CPU:</span>
+                            <span class="spec-value">Quad-core ARM Cortex-A72</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">RAM:</span>
+                            <span class="spec-value">8GB LPDDR4</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Storage:</span>
+                            <span class="spec-value">64GB microSD</span>
+                        </div>
+                    </div>
+                    <button class="learn-more-btn" onclick="openModal('raspberry-pi')">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </button>
+                </div>
+
+                <!-- Camera Module -->
+                <div class="component-card" data-component="camera">
+                    <div class="component-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>HD Camera Module</h3>
+                    <p class="component-description">
+                        High-definition camera with night vision capability for continuous surveillance.
+                    </p>
+                    <div class="component-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Resolution:</span>
+                            <span class="spec-value">1080p @ 30fps</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Field of View:</span>
+                            <span class="spec-value">62.2° diagonal</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Night Vision:</span>
+                            <span class="spec-value">IR LED illumination</span>
+                        </div>
+                    </div>
+                    <button class="learn-more-btn" onclick="openModal('camera')">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </button>
+                </div>
+
+                <!-- Servo Motors -->
+                <div class="component-card" data-component="servo">
+                    <div class="component-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Servo Motors</h3>
+                    <p class="component-description">
+                        Precision servo motors for camera pan/tilt and wheel steering mechanisms.
+                    </p>
+                    <div class="component-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Type:</span>
+                            <span class="spec-value">SG90 Micro Servo</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Torque:</span>
+                            <span class="spec-value">2.5kg·cm</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Rotation:</span>
+                            <span class="spec-value">180° range</span>
+                        </div>
+                    </div>
+                    <button class="learn-more-btn" onclick="openModal('servo')">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </button>
+                </div>
+
+                <!-- Ultrasonic Sensor -->
+                <div class="component-card" data-component="ultrasonic">
+                    <div class="component-icon">
+                        <i class="fas fa-wave-square"></i>
+                    </div>
+                    <h3>Ultrasonic Sensors</h3>
+                    <p class="component-description">
+                        HC-SR04 sensors for obstacle detection and distance measurement during navigation.
+                    </p>
+                    <div class="component-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Range:</span>
+                            <span class="spec-value">2cm - 400cm</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Accuracy:</span>
+                            <span class="spec-value">±3mm</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Frequency:</span>
+                            <span class="spec-value">40kHz</span>
+                        </div>
+                    </div>
+                    <button class="learn-more-btn" onclick="openModal('ultrasonic')">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Advanced Features</h2>
+            <div class="features-grid">
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Motion Detection</h3>
+                    <p>Advanced computer vision algorithms detect and track moving objects in real-time.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Remote Monitoring</h3>
+                    <p>Access live video feed and control the robot remotely via web interface or mobile app.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Autonomous Navigation</h3>
+                    <p>Intelligent pathfinding with obstacle avoidance using ultrasonic sensor array.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Alert System</h3>
+                    <p>Instant notifications and alerts when suspicious activity is detected.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3>Night Vision</h3>
+                    <p>Infrared illumination enables clear surveillance even in complete darkness.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Storage</h3>
+                    <p>Secure cloud backup of surveillance footage and system logs.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section id="specs" class="specifications">
+        <div class="container">
+            <h2 class="section-title">Technical Specifications</h2>
+            <div class="specs-container">
+                <div class="specs-category">
+                    <h3><i class="fas fa-microchip"></i> Processing Power</h3>
+                    <div class="specs-list">
+                        <div class="spec-row">
+                            <span class="spec-name">Main Processor</span>
+                            <span class="spec-value">Raspberry Pi 4B (ARM Cortex-A72)</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-name">Clock Speed</span>
+                            <span class="spec-value">1.5 GHz Quad-Core</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-name">Memory</span>
+                            <span class="spec-value">8GB LPDDR4 RAM</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-name">Operating System</span>
+                            <span class="spec-value">Raspberry Pi OS (Linux)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="specs-category">
+                    <h3><i class="fas fa-eye"></i> Vision System</h3>
+                    <div class="specs-list">
+                        <div class="spec-row">
+                            <span class="spec-name">Primary Camera</span>
+                            <span class="spec-value">Pi Camera Module V2 (8MP)</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-name">Video Resolution</span>
+                            <span class="spec-value">1080p @ 30fps</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-name">Pan/Tilt Range</span>
+                            <span class="spec-value">±90° horizontal, ±45° vertical</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-name">Night Vision Range</span>
+                            <span class="spec-value">Up to 10 meters</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="specs-category">
+                    <h3><i class="fas fa-cog"></i> Motion System</h3>
+                    <div class="specs-list">
+                        <div class="spec-row">
+                            <span class="spec-name">Drive Motors</span>
+                            <span class="spec-value">2x DC Gear Motors (12V)</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-name">Servo Motors</span>
+                            <span class="spec-value">3x SG90 Micro Servos</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-name">Max Speed</span>
+                            <span class="spec-value">0.5 m/s</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-name">Battery Life</span>
+                            <span class="spec-value">6-8 hours continuous operation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="specs-category">
+                    <h3><i class="fas fa-wave-square"></i> Sensors</h3>
+                    <div class="specs-list">
+                        <div class="spec-row">
+                            <span class="spec-name">Ultrasonic Sensors</span>
+                            <span class="spec-value">4x HC-SR04 (360° coverage)</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-name">Detection Range</span>
+                            <span class="spec-value">2cm - 4m</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-name">IMU Sensor</span>
+                            <span class="spec-value">MPU6050 (Gyro + Accelerometer)</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-name">Temperature Sensor</span>
+                            <span class="spec-value">DS18B20 Digital</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for detailed component information -->
+    <div id="modal-overlay" class="modal-overlay" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-robot"></i> SurveillanceBot</h3>
+                    <p>Advanced robotics for modern security needs.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Project Info</h4>
+                    <ul>
+                        <li>Developed with Raspberry Pi</li>
+                        <li>Open Source Hardware</li>
+                        <li>AI-Powered Detection</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Technologies</h4>
+                    <ul>
+                        <li>Python Programming</li>
+                        <li>Computer Vision</li>
+                        <li>IoT Integration</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Surveillance Security Robot Project. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
